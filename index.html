@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+</head>
+<body style="background-color:beige;">
+    <h2>Job Application</h2>
+    <form>
+        <fieldset>
+            <legend style="color:blue">Personal Information</legend>
+            <label>First Name</label>
+            <input type="text" name="first name">
+            <label>Middle Name</label>
+            <input type="text" name="middle name">
+            <label>Last Name</label>
+            <input type="text" name="lastname"><br>
+            <label>Gender</label><br>
+            <input type="radio" name="Gender">
+            <label>Male</label><br>
+            <input type="radio" name="Gender">
+            <label>Female</label><br>
+            <label>Date of Birth</label><br>
+            <input type="date" name="Date of Birth"><br>
+            <label>Nationality</label><br>
+            <input type="text" name="Nationality" value="Indian"><br>
+            <label>Email Id</label>
+            <input type="email">
+            <label>Phone Number</label>
+            <input type="tel" name="Phone" size="11" pattern="[0-9]{4}-[0-9]{6}" required><br>
+            <label>Password</label>
+            <input type="password">
+        </fieldset>
+        <fieldset>
+            <legend style="color:blue">Qualifications</legend>
+            <label>Educational Qualification</label><br>
+            <input type="checkbox" name="Qualification">
+            <label>BTech</label><br>
+            <input type="checkbox" name="Qualification">
+            <label>MTech</label><br>
+            <input type="checkbox" name="Qualification">
+            <label>PhD</label><br>
+        </fieldset>
+        <fieldset>
+            <legend style="color: blue;">Residential Informations</legend>
+            <label>Address<label><br>
+            <label>Street<label>   
+            <input type="text" name="Street">
+            <label>City<label>   
+            <select>
+                <option value="Others">Others</option>
+                <option value="Banglore">Banglore</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Chennai">Chennai</option>        
+                <option value="Kolkata">Kolkata</option>      
+            </select>
+            <label>State<label>   
+            <input type="text" name="State">
+            <label>PinCode<label>   
+            <input type="text" name="PinCode"><br>
+        </fieldset>
+        <fieldset>
+            <legend style="color: blue"> Documents </legend>
+            <label>Resume<label><br>
+            <input type="file">
+        </fieldset>
+        <fieldset>
+            <label>Comments</label><br>
+            <textarea rows="5" cols="200">Type your Comments</textarea>
+        </fieldset><br>
+        <input type="submit">
+        <input type="reset">
+        <input type="button" value="clear">
+    </form>
+</body>
+</html>
